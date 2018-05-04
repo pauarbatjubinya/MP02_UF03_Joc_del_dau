@@ -1,0 +1,13 @@
+create function dbo.meloquedo (@njugador as int,@numero as int)
+returns integer
+as begin
+	declare @meloquedo bit;
+	  if @numero IN (6)
+		  begin
+		  set @meloquedo=1
+		  end;
+	  else 
+		  begin
+		  set @meloquedo=0
+		  end;
+	return @meloquedo
